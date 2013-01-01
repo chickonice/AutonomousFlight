@@ -28,10 +28,10 @@ And Navio. Odroid handles AR Tag computation
 #define MAXRC   1900
 
 //Factors for control
-#define FACTOR_ROLL 100
-#define FACTOR_PITCH 100
-#define FACTOR_THROTTLE 100
-#define FACTOR_YAW 100
+#define FACTOR_ROLL 10
+#define FACTOR_PITCH 10
+#define FACTOR_THROTTLE 10
+#define FACTOR_YAW 10
 
 // Subscriber to flight mode
 ros::Subscriber mavros_state_sub;
@@ -64,12 +64,6 @@ float curr_AR_X = 0.0;
 float curr_AR_Y = 0.0;
 float curr_AR_Z = 0.0;  
 
-float a_x = 0;
-float a_y = 0;
-
-float pitch_des = 0;
-float roll_des = 0;
-
 //desired value
 float des_X = 0;
 float des_Y = 0;
@@ -79,6 +73,9 @@ float des_Yaw = 0;	//in radians
 float offset_X = 0;
 float offset_Y = 0;
 float offset_Z = 0;
+
+float to_move_X = 0;
+float to_move_Y = 0;
 
 /* Can define other AR Tag coordinates here */
 
@@ -110,7 +107,7 @@ void AprilMessageReceived(const apriltags::AprilTagDetections& detectionsMsg) {
 		//These position coordinates have an error that needs to be corrected for, because the 
 		//quadrotor yaw coordinates have an error relative to the April Tag fixed coordinate system
 		//so need to correct for that error
-		CurrentPoseStamped.pose.position.x = detectionsMsg.detections[0].pose.position.x;
+		CurrentPoseStamped.pose.position.x = -detectionsMsg.detections[0].pose.position.x;
 		CurrentPoseStamped.pose.position.y = detectionsMsg.detections[0].pose.position.y;
 		CurrentPoseStamped.pose.position.z = detectionsMsg.detections[0].pose.position.z;
 
@@ -125,127 +122,24 @@ void AprilMessageReceived(const apriltags::AprilTagDetections& detectionsMsg) {
 	
 //**Calculate yaw between AR frame and Q-frame from quaternions in detectionsMsg
 		//getting scalar of Yaw and converting from quarternion into ENU coordinate frame	
-		curr_Q_Yaw = -tmp_yaw;
-		//ROS_INFO("yaw: %0.1f", curr_Q_Yaw);
+		curr_Q_Yaw = tmp_yaw;
+
 		//**Converting ARTag coordinate position to Q-frame using yaw error correction
 		curr_Q_X = cos(curr_Q_Yaw)*CurrentPoseStamped.pose.position.x  + sin(curr_Q_Yaw)*CurrentPoseStamped.pose.position.y + offset_X;
 		curr_Q_Y = -sin(curr_Q_Yaw)*CurrentPoseStamped.pose.position.x + cos(curr_Q_Yaw)*CurrentPoseStamped.pose.position.y + offset_Y;
-		curr_Q_Z = CurrentPoseStamped.pose.position.z + offset_Z;
-	
-		//ROS_INFO("X: %0.1f Y: %0.1f Z: %0.1f, Y: %0.1f",CurrentPoseStamped.pose.position.x,CurrentPoseStamped.pose.position.y, CurrentPoseStamped.pose.position.z, curr_Q_Yaw);
 
-		a_x = -10*(0 - CurrentPoseStamped.pose.position.x);
-		a_y = 10*(0 - CurrentPoseStamped.pose.position.y);		
-	
-		//ROS_INFO("N: %0.1f E: %0.1f ax: %0.1f ay: %0.1f",CurrentPoseStamped.pose.position.x,CurrentPoseStamped.pose.position.y,a_x,a_y);
+		to_move_X = -curr_Q_X;
+		to_move_Y = -curr_Q_Y;
 
-		//pitch_des = a_x*cos(curr_Q_Yaw) - a_y*sin(curr_Q_Yaw);
-		//roll_des  = a_x*sin(curr_Q_Yaw) + a_y*cos(curr_Q_Yaw);
-		pitch_des = CurrentPoseStamped.pose.position.y;	
-		roll_des = CurrentPoseStamped.pose.position.x;					
+		Roll = BASERC - to_move_X;
+		Pitch = BASERC + to_move_Y;				
 
-		//ROS_INFO("Roll: %0.1f Pitch: %0.1f",roll_des,pitch_des);
-
+		ROS_INFO("ROLL: %0.1f PITCH: %0.1f", Roll, Pitch);
 
 		ROS_INFO("AprilTags Detected");
         }else {
 		ROS_ERROR("No AprilTags Detected");
 	}	  
-
-	//**Calculate velocity from current and previous positions and delta_time_between_calls
-
-	// Time since last call
-        double delta_time_between_calls = (ros::Time::now() - prev_time).toSec();
-        prev_time = ros::Time::now();
-
-        // Calculate velocity
-        if (delta_time_between_calls < -1.0){
-		prev_vel_X = (prev_Q_X - curr_Q_X)/delta_time_between_calls;
-		prev_vel_Y = (prev_Q_Y - curr_Q_Y)/delta_time_between_calls;
-		prev_vel_Z = (prev_Q_Z - curr_Q_Z)/delta_time_between_calls;
-        } else {
-		prev_vel_X = 0.0;
-		prev_vel_Y = 0.0;
-		prev_vel_Z = 0.0;
-        }
-	//print info 	
-	/*char tab2[1024];
-        strncpy(tab2, mode.c_str(), sizeof(tab2));
-        tab2[sizeof(tab2) - 1] = 0;
-        ROS_INFO("Quadrotor_Curr_Coordinates = (%f , %f) | Previous_Coordinates = (%f , %f) \n delta_time_between_calls = %fs | prev_vel_X = (%f , %f)\n Roll = %f | Pitch = %f\n Mode = %s \n", curr_Q_X, curr_Q_Y, prev_Q_X, prev_Q_Y, delta_time_between_calls, prev_vel_X, prev_vel_Y, Roll, Pitch, tab2);
-	*/
-	 // Error between Quadrotor coordinates and April Tag coordinates in ENU (East North Up = X Y Z)
-	float ErX = 0.0;
-	float ErY = 0.0;
-	float ErZ = 0.0;
-	float ErYaw = 0.0;
-	
-        prev_Q_X = curr_Q_X;
-        prev_Q_Y = curr_Q_Y;
-	prev_Q_Z = curr_Q_Z;	
-
-	// Calculate the error between Quadrotor center and ARTag center
-	ErX = des_X - curr_Q_X;
-	ErY = des_Y - curr_Q_Y;
-	ErZ = des_Z - curr_Q_Z;
-	ErYaw = des_Yaw - curr_Q_Yaw; 
-
-        // Calculate Roll, Pitch, Throttle, Yaw depending on the mode
-	 if (mode == "ALT_HOLD"){
-		Roll = BASERC + FACTOR_ROLL*(0.5*roll_des); //+0.1*prev_vel_X);
-		Pitch = BASERC + FACTOR_PITCH*(0.5*pitch_des); //+0.1*prev_vel_Y); 
-		Throttle = BASERC + FACTOR_THROTTLE*(0.5*ErZ+0.1*prev_vel_Z);
-		Yaw = BASERC + FACTOR_YAW*(0.1*ErYaw);
-        } else{
-		Roll = BASERC;
-		Pitch = BASERC;
-		Throttle = BASERC;
-		Yaw = BASERC;
-        }  
-         
-        // Limit the Roll
-        if (Roll > MAXRC){
-            Roll = MAXRC;
-        } else if (Roll < MINRC){
-            Roll = MINRC;
-        }
-
-        // Limit the Pitch
-        if (Pitch > MAXRC){
-            Pitch = MAXRC;
-        } else if (Pitch < MINRC){
-            Pitch = MINRC;
-        }	
-	
-	  // Limit the Throttle
-        if (Throttle > MAXRC){
-            Throttle = MAXRC;
-        } else if (Throttle < MINRC){
-            Throttle = MINRC;
-        }
-	  // Limit the Yaw
-        if (Yaw > MAXRC){
-            Yaw = MAXRC;
-        } else if (Yaw < MINRC){
-            Yaw = MINRC;
-        }	
-	
-	
-	//Publish new values to msg.channels[] as shown below for quadrotor flight controller
-        msg.channels[0] = Roll;     //Roll
-        msg.channels[1] = Pitch;    //Pitch
-        msg.channels[2] = 0;   //Throttle
-        msg.channels[3] = Yaw;        //Yaw
-        msg.channels[4] = 0;
-        msg.channels[5] = 0;
-        msg.channels[6] = 0;
-        msg.channels[7] = 0;
-
-
-	ROS_INFO("ROLL: %0.1f	PITCH: %0.1f	THROTTLE: %0.1f	   YAW: %0.1f", Roll, Pitch, Throttle, Yaw);
-	//ROS_INFO("%0.1f	%0.1f %0.1f", CurrentPoseStamped.pose.position.x, CurrentPoseStamped.pose.position.y, CurrentPoseStamped.pose.position.z);
-	//ROS_INFO("yaw: %0.1f", curr_Q_Yaw);
-        pub.publish(msg); 
 }
 
 

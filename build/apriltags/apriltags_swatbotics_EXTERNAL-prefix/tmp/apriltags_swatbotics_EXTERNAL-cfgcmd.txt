@@ -1,1 +1,0 @@
-cmd='/usr/bin/cmake;-DCMAKE_CXX_FLAGS=-frounding-math;-DBUILD_SHARED_LIBS:BOOL=ON;-GUnix Makefiles;/home/odroid/Documents/AutonomousFlight/final_ws/build/apriltags/apriltags_swatbotics_EXTERNAL-prefix/src/apriltags_swatbotics_EXTERNAL'

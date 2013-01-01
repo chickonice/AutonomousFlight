@@ -410,6 +410,19 @@ planner/fast:
 .PHONY : planner/fast
 
 #=============================================================================
+# Target rules for targets named planner2
+
+# Build rule for target.
+planner2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 planner2
+.PHONY : planner2
+
+# fast build rule for target.
+planner2/fast:
+	$(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/build
+.PHONY : planner2/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
 
 # Build rule for target.
@@ -676,6 +689,7 @@ help:
 	@echo "... mavros_msgs_generate_messages_lisp"
 	@echo "... mavros_msgs_generate_messages_py"
 	@echo "... planner"
+	@echo "... planner2"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

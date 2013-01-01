@@ -290,6 +290,7 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 
 # Convenience name for "all" pass in the directory.
 single_tag_hover/all: single_tag_hover/CMakeFiles/planner.dir/all
+single_tag_hover/all: single_tag_hover/CMakeFiles/planner2.dir/all
 .PHONY : single_tag_hover/all
 
 # Convenience name for "clean" pass in the directory.
@@ -306,6 +307,7 @@ single_tag_hover/clean: single_tag_hover/CMakeFiles/mavros_msgs_generate_message
 single_tag_hover/clean: single_tag_hover/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/clean
 single_tag_hover/clean: single_tag_hover/CMakeFiles/mavros_msgs_generate_messages_py.dir/clean
 single_tag_hover/clean: single_tag_hover/CMakeFiles/planner.dir/clean
+single_tag_hover/clean: single_tag_hover/CMakeFiles/planner2.dir/clean
 single_tag_hover/clean: single_tag_hover/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 single_tag_hover/clean: single_tag_hover/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 single_tag_hover/clean: single_tag_hover/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -735,6 +737,41 @@ single_tag_hover/CMakeFiles/planner.dir/clean:
 
 # clean rule for target.
 clean: single_tag_hover/CMakeFiles/planner.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target single_tag_hover/CMakeFiles/planner2.dir
+
+# All Build rule for target.
+single_tag_hover/CMakeFiles/planner2.dir/all:
+	$(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/depend
+	$(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/odroid/Documents/AutonomousFlight/apm_ws/build/CMakeFiles  4
+	@echo "Built target planner2"
+.PHONY : single_tag_hover/CMakeFiles/planner2.dir/all
+
+# Include target in all.
+all: single_tag_hover/CMakeFiles/planner2.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+single_tag_hover/CMakeFiles/planner2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documents/AutonomousFlight/apm_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 single_tag_hover/CMakeFiles/planner2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odroid/Documents/AutonomousFlight/apm_ws/build/CMakeFiles 0
+.PHONY : single_tag_hover/CMakeFiles/planner2.dir/rule
+
+# Convenience name for target.
+planner2: single_tag_hover/CMakeFiles/planner2.dir/rule
+.PHONY : planner2
+
+# clean rule for target.
+single_tag_hover/CMakeFiles/planner2.dir/clean:
+	$(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/clean
+.PHONY : single_tag_hover/CMakeFiles/planner2.dir/clean
+
+# clean rule for target.
+clean: single_tag_hover/CMakeFiles/planner2.dir/clean
 .PHONY : clean
 
 #=============================================================================

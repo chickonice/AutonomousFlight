@@ -195,3 +195,7 @@ add_executable(planner src/planner.cpp)
 target_link_libraries(planner ${catkin_LIBRARIES})
 add_dependencies(planner single_tag_generate_hover_messages_cpp)
 
+add_executable(planner2 src/planner2.cpp)
+target_link_libraries(planner2 ${catkin_LIBRARIES})
+add_dependencies(planner2 single_tag_generate_hover_messages_cpp)
+

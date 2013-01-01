@@ -332,6 +332,20 @@ planner/fast:
 .PHONY : planner/fast
 
 # Convenience name for target.
+single_tag_hover/CMakeFiles/planner2.dir/rule:
+	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 single_tag_hover/CMakeFiles/planner2.dir/rule
+.PHONY : single_tag_hover/CMakeFiles/planner2.dir/rule
+
+# Convenience name for target.
+planner2: single_tag_hover/CMakeFiles/planner2.dir/rule
+.PHONY : planner2
+
+# fast build rule for target.
+planner2/fast:
+	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/build
+.PHONY : planner2/fast
+
+# Convenience name for target.
 single_tag_hover/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
 	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 single_tag_hover/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : single_tag_hover/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
@@ -607,6 +621,30 @@ src/planner.cpp.s:
 	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f single_tag_hover/CMakeFiles/planner.dir/build.make single_tag_hover/CMakeFiles/planner.dir/src/planner.cpp.s
 .PHONY : src/planner.cpp.s
 
+src/planner2.o: src/planner2.cpp.o
+.PHONY : src/planner2.o
+
+# target to build an object file
+src/planner2.cpp.o:
+	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/src/planner2.cpp.o
+.PHONY : src/planner2.cpp.o
+
+src/planner2.i: src/planner2.cpp.i
+.PHONY : src/planner2.i
+
+# target to preprocess a source file
+src/planner2.cpp.i:
+	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/src/planner2.cpp.i
+.PHONY : src/planner2.cpp.i
+
+src/planner2.s: src/planner2.cpp.s
+.PHONY : src/planner2.s
+
+# target to generate assembly for a file
+src/planner2.cpp.s:
+	cd /home/odroid/Documents/AutonomousFlight/apm_ws/build && $(MAKE) -f single_tag_hover/CMakeFiles/planner2.dir/build.make single_tag_hover/CMakeFiles/planner2.dir/src/planner2.cpp.s
+.PHONY : src/planner2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -631,6 +669,7 @@ help:
 	@echo "... mavros_msgs_generate_messages_lisp"
 	@echo "... mavros_msgs_generate_messages_py"
 	@echo "... planner"
+	@echo "... planner2"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -654,6 +693,9 @@ help:
 	@echo "... src/planner.o"
 	@echo "... src/planner.i"
 	@echo "... src/planner.s"
+	@echo "... src/planner2.o"
+	@echo "... src/planner2.i"
+	@echo "... src/planner2.s"
 .PHONY : help
 
 
