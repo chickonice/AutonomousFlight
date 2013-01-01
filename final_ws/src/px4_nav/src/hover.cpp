@@ -70,11 +70,19 @@ int main(int argc, char **argv)
        if(count == 100)
        {
               mavros_msgs::SetMode offb_set_mode;
-              offb_set_mode.request.custom_mode = "OFFBOARD";
-              ROS_INFO("OFFBOARD mode set");
-       
-              mavros_msgs::CommandBool arm_cmd;
-              arm_cmd.request.value = true;
+		offb_set_mode.request.base_mode = 0;              
+		offb_set_mode.request.custom_mode = "OFFBOARD";
+              //ROS_INFO("OFFBOARD mode set");
+		
+		if(set_mode_client.call(offb_set_mode)){
+			ROS_INFO("setmode send ok %d value:", offb_set_mode.response.success);
+		}else {
+       			ROS_ERROR("Failed SetMode");
+			return -1;
+		}
+		
+              //mavros_msgs::CommandBool arm_cmd;
+              //arm_cmd.request.value = true;
        }
 
        chatter_pub.publish(msg);
