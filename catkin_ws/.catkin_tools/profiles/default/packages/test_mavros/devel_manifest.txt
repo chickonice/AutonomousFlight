@@ -1,0 +1,6 @@
+mavros/test_mavros
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/share/test_mavros/cmake/test_mavrosConfig.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/test_mavros/share/test_mavros/cmake/test_mavrosConfig-version.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/share/test_mavros/cmake/test_mavrosConfig-version.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/test_mavros/lib/libmavros_sitl_test.so /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/lib/libmavros_sitl_test.so
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/test_mavros/lib/pkgconfig/test_mavros.pc /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/lib/pkgconfig/test_mavros.pc
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/test_mavros/lib/test_mavros/sitl_test_node /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/lib/test_mavros/sitl_test_node

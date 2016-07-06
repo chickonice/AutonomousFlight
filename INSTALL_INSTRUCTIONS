@@ -1,1 +1,4 @@
 Install mavlink_ros package in mavlink worspace created
+Installed mavros github and followed installation instructions for kinetic
+deleted all workspaces and reinstalled mavros package, which recompiles mavlink libraries as well
+downloaded boost library and unzipped it, not sure if necessary for compiling c++ code, but after rebuilding mavros packages, they compiled with no errors

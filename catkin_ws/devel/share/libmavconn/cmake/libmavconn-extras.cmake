@@ -1,0 +1,1 @@
+/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake

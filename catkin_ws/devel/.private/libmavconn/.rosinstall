@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/libmavconn/setup.sh

@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target mavros_msgs_generate_messages_cpp[0m
+[  0%] Built target mavros_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target mavros[0m
+[  2%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_data.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_stringify.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_timesync.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_to_string.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_sensor_orientation.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_frame_conversions.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/ftf_quaternion_utils.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavlink_diag.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/rosconsole_bridge.cpp.o[0m
+[ 28%] [32m[1mLinking CXX shared library /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/mavros/lib/libmavros.so[0m
+[ 28%] Built target mavros
+[35m[1mScanning dependencies of target gcs_bridge[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/gcs_bridge.dir/src/gcs_bridge.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/mavros/lib/mavros/gcs_bridge[0m
+[ 33%] Built target gcs_bridge
+[35m[1mScanning dependencies of target mavros_node[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/mavros_node.dir/src/mavros_node.cpp.o[0m
+[ 38%] [32m[1mLinking CXX executable /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/mavros/lib/mavros/mavros_node[0m
+[ 38%] Built target mavros_node
+[35m[1mScanning dependencies of target mavros_plugins[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/dummy.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_status.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_time.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/imu_pub.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/param.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/waypoint.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/rc_io.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/command.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/local_position.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/global_position.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_position.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/safety_area.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/3dr_radio.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_velocity.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_accel.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_attitude.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_raw.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/vfr_hud.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/ftp.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/actuator_control.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/manual_control.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/altitude.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/hil_controls.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/mavros/lib/libmavros_plugins.so[0m
+[100%] Built target mavros_plugins
