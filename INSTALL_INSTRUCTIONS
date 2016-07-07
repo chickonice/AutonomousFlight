@@ -2,3 +2,12 @@ Install mavlink_ros package in mavlink worspace created
 Installed mavros github and followed installation instructions for kinetic
 deleted all workspaces and reinstalled mavros package, which recompiles mavlink libraries as well
 downloaded boost library and unzipped it, not sure if necessary for compiling c++ code, but after rebuilding mavros packages, they compiled with no errors
+ran source devel/setup.sh in catkin_ws to source the mav_ros package
+using pi3 and navio to broadcast wifi
+use desktop computer that is connected with ethernet to the pi wifi
+ssh to the pi from the desktop
+downloaded APM Planner 2.0 as a ground control station onto personal laptop
+connect laptop to pi wifi
+run arductoper on pi with ip address of laptop to see pi connected to APM Planner
+to run arducopter use command:
+sudo ./ArduCopter.elf -A udp:192.168.1.2:14550 where the ip is the ip address of the device with the ground control station i.e. my laptop
