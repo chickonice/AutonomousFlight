@@ -1,1 +1,0 @@
-/home/spacecat/AutonomousFlight/AutonomousFlight/catkin_ws/devel/.private/catkin_tools_prebuild/setup.sh
