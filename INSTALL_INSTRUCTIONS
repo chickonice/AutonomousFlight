@@ -11,3 +11,18 @@ connect laptop to pi wifi
 run arductoper on pi with ip address of laptop to see pi connected to APM Planner
 to run arducopter use command:
 sudo ./ArduCopter.elf -A udp:192.168.1.2:14550 where the ip is the ip address of the device with the ground control station i.e. my laptop
+
+Deleted mavros packages that was trying to compile from source code, because has bizarre to_string error in mavlink with no apparent fix. Posted in forum, so far no response. 
+
+Decided to compile the binary from the mavros wiki. It downloaded. https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation
+
+Attached pi/navio to desktop computer with USB to df13 cable. 
+
+Had to figure out what the device was called. To troubelshoot this, look at ls /dev/* for a device list. Plug and unplug the pi to see what tty device appears/disapears. This will give you the fcu address (flight control unit)
+
+rosrun mavros mavros_node _fcu_url:=/dev/tty0:921600 _gcs_url:=udp://@192.168.42.143
+
+roslaunch mavros apm.launch fcu_url:=/dev/tty0:921600 gcs_url:=udp://@192.168.42.143
+
+
+
