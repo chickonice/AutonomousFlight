@@ -26,3 +26,5 @@ roslaunch mavros apm.launch fcu_url:=/dev/tty0:921600 gcs_url:=udp://@192.168.42
 
 
 
+sudo -s
+need to pgive yourself root access to launch the above commands of roslaunch mavros...

@@ -1,0 +1,12 @@
+In file included from [01m[K/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include/mavconn/mavlink_dialect.h:26:0[m[K,
+                 from [01m[K/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include/mavconn/interface.h:37[m[K,
+                 from [01m[K/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/src/mavlink_helpers.cpp:21[m[K:
+[01m[K/opt/ros/kinetic/include/mavlink/v2.0/autoquad/autoquad.hpp:64:28:[m[K [01;31m[Kerror: [m[Kenumerator value 2147483648l is outside the range of underlying type ‘[01m[Kint[m[K’
+     AQ_NAV_STATUS_FAILSAFE=2147483648, /* System is in failsafe recovery mode | */
+[01;32m[K                            ^[m[K
+[01m[K/opt/ros/kinetic/include/mavlink/v2.0/autoquad/autoquad.hpp:65:14:[m[K [01;31m[Kerror: [m[Kenumerator value 2147483649l is outside the range of underlying type ‘[01m[Kint[m[K’
+     ENUM_END=2147483649, /*  | */
+[01;32m[K              ^[m[K
+make[2]: *** [CMakeFiles/mavconn.dir/src/mavlink_helpers.cpp.o] Error 1
+make[1]: *** [CMakeFiles/mavconn.dir/all] Error 2
+make: *** [all] Error 2
