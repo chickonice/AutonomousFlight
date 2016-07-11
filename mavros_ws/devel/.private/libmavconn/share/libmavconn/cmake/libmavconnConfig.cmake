@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(libmavconn_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include;/usr/include;/opt/ros/kinetic/include " STREQUAL " ")
+if(NOT "/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include;/usr/include;/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/include " STREQUAL " ")
   set(libmavconn_INCLUDE_DIRS "")
-  set(_include_dirs "/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include;/usr/include;/opt/ros/kinetic/include")
+  set(_include_dirs "/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/src/mavros/libmavconn/include;/usr/include;/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

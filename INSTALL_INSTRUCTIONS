@@ -28,3 +28,23 @@ roslaunch mavros apm.launch fcu_url:=/dev/tty0:921600 gcs_url:=udp://@192.168.42
 
 sudo -s
 need to pgive yourself root access to launch the above commands of roslaunch mavros...
+
+
+Decided to reinstall everything from scratch. Installed mavlink separately from binary found online: ros-kinetic-mavlink tar.gz file. Downloaded into workspace of mavros_ws; added the path to the mavlink to the python path with 
+export ROS_PACKAGE_PATH=$HOME/src:$ROS_PACKAGE_PATH
+source /opt/ros/kinetic/setup.sh
+
+Things didn't work at this point even though I had followed directions for installing mavlink separaetley and trued to build MAVROS. So I found some help on the forums: https://github.com/mavlink/mavros/issues/508 
+
+catkin clean --all
+
+catkin build --cmake-args -DMAVLINK_DIALECT=common <----this worked!!!!!
+
+When running roslaunch mavros.... I got an error, so found answer in this forum: https://github.com/ros/ros_comm/issues/49. The answer was to update things using apt-get: 
+sudo apt-get update && sudo apt-get dist-upgrade
+source devel/setup.sh
+
+___________________________________________________________________________________________
+
+rostopic list (to list all active topics) 
+rostopic echo <name_of_topic> to see if it's publishing anything

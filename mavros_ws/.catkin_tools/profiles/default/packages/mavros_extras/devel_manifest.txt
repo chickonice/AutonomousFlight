@@ -1,0 +1,7 @@
+mavros/mavros_extras
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/libmavros_extras.so /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/libmavros_extras.so
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/pkgconfig/mavros_extras.pc /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/pkgconfig/mavros_extras.pc
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/mavros_extras/servo_state_publisher
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/copter_visualization /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/mavros_extras/copter_visualization

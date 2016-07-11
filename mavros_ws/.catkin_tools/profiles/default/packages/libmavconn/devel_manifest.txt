@@ -1,0 +1,6 @@
+mavros/libmavconn
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/libmavconn/share/libmavconn/cmake/libmavconnConfig.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/libmavconn/cmake/libmavconnConfig.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/libmavconn/share/libmavconn/cmake/libmavconnConfig-version.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/libmavconn/cmake/libmavconnConfig-version.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/libmavconn/cmake/libmavconn-extras.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/libmavconn/lib/libmavconn.so /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/libmavconn.so
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/libmavconn/lib/pkgconfig/libmavconn.pc /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/pkgconfig/libmavconn.pc

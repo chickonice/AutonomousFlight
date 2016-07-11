@@ -1,0 +1,9 @@
+mavros/mavros
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/share/mavros/cmake/mavrosConfig-version.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/mavros/cmake/mavrosConfig-version.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/share/mavros/cmake/mavrosConfig.cmake /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/mavros/cmake/mavrosConfig.cmake
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/libmavros.so /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/libmavros.so
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/libmavros_plugins.so /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/libmavros_plugins.so
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/mavros/gcs_bridge /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/mavros/gcs_bridge
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/mavros/mavros_node /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/mavros/mavros_node
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/pkgconfig/mavros.pc /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/pkgconfig/mavros.pc
+/home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros/lib/python2.7/dist-packages/mavros/__init__.py /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/python2.7/dist-packages/mavros/__init__.py

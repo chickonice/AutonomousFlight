@@ -1,0 +1,18 @@
+[35m[1mScanning dependencies of target mavros_extras[0m
+[  8%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/distance_sensor.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/px4flow.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/mocap_pose_estimate.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vision_pose_estimate.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vision_speed_estimate.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/vibration.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mavros_extras.dir/src/plugins/cam_imu_sync.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/libmavros_extras.so[0m
+[ 66%] Built target mavros_extras
+[35m[1mScanning dependencies of target servo_state_publisher[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/servo_state_publisher.dir/src/servo_state_publisher.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/servo_state_publisher[0m
+[ 83%] Built target servo_state_publisher
+[35m[1mScanning dependencies of target copter_visualization[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/copter_visualization.dir/src/copter_visualization.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/lib/mavros_extras/copter_visualization[0m
+[100%] Built target copter_visualization

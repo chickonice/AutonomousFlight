@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/.private/mavros_extras/setup.sh
