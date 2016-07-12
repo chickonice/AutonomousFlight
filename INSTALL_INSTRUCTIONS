@@ -48,3 +48,13 @@ ________________________________________________________________________________
 
 rostopic list (to list all active topics) 
 rostopic echo <name_of_topic> to see if it's publishing anything
+
+trying to launch with different USBtty setting for flight control unit. Changed the default fcu_url to ttyUSB0 instead of ttyACM0, because that's the port my APM is on:
+
+roslaunch mavros apm.launch fcu_url:=/dev/ttyUSB0:57600 gcs_url:=udp://@192.168.42.143
+
+Need to grant permissions to access the serial port:
+ sudo chmod 666 /dev/ttyUSB0
+ rosrun mavros mavsys rate --all 100
+
+ To diagnose connection issues downloaded rqt_robot_plugins packages and run: rosrun rqt_runtime_monitor rqt_runtime_monitor 
