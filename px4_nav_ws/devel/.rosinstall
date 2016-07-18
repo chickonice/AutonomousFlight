@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/odroid/Documents/AutonomousFlight/px4_nav_ws/devel/setup.sh
