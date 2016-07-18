@@ -1,8 +1,0 @@
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/./env.sh
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/./setup.sh
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/./setup.bash
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/./setup.zsh
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/./_setup_util.py
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Symlinking /home/spacecat/AutonomousFlight/AutonomousFlight/mavros_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
