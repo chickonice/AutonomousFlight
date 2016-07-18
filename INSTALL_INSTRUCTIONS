@@ -62,3 +62,4 @@ ________________________________________________________________________________
 Connected odroid to pi3 with usb to df13 cable. 
 Odroid has binary install of mav_ros and ros indigo 
 
+using 404warehouse.net/2015/12/20/autopilot-offboard-control-using-mavros-package-on-ros/ for basic files and switching to px4 flight stack instead of APM flight stack, because APM flight stack didn't have enough messages to send setpoints and local positions
