@@ -44,10 +44,10 @@ int main(int argc, char **argv)
    ros::NodeHandle n;
    ros::NodeHandle n_apriltags;
 
-   //ros::Publisher chatter_pub = n.advertise<geometry_msgs::PoseStamped>("/mavros/setpoint_position/local",100);
-   //ros::Publisher current_pub = n.advertise<geometry_msgs::PoseStamped>("/mavros/mocap/pose",100);
+   ros::Publisher chatter_pub = n.advertise<geometry_msgs::PoseStamped>("/mavros/setpoint_position/local",100);
+   ros::Publisher current_pub = n.advertise<geometry_msgs::PoseStamped>("/mavros/mocap/pose",100);
    ros::Subscriber sub_apriltags = n_apriltags.subscribe("/apriltags/detections", 1000, &AprilMessageReceived);
-   //ros::ServiceClient set_mode_client = n.serviceClient<mavros_msgs::SetMode>("mavros/set_mode");
+   ros::ServiceClient set_mode_client = n.serviceClient<mavros_msgs::SetMode>("mavros/set_mode");
    ros::Rate loop_rate(100);
    ros::spinOnce();
  
@@ -67,7 +67,7 @@ int main(int argc, char **argv)
        msg.pose.orientation.z = 0;
        msg.pose.orientation.w = 1;
  
-       if(count == -100)
+       if(count == 100)
        {
               mavros_msgs::SetMode offb_set_mode;
               offb_set_mode.request.custom_mode = "OFFBOARD";
@@ -75,16 +75,13 @@ int main(int argc, char **argv)
        
               mavros_msgs::CommandBool arm_cmd;
               arm_cmd.request.value = true;
-
        }
 
-       //chatter_pub.publish(msg);
-       //current_pub.publish(CurrentPoseStamped);
+       chatter_pub.publish(msg);
+       current_pub.publish(CurrentPoseStamped);
        ros::spinOnce();
        count++;
        loop_rate.sleep();
-   }
-    
-       
+   }      
    return 0;
 }
