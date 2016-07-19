@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/odroid/Documents/AutonomousFlight/terarangertower_ws/devel/setup.sh
