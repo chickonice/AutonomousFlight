@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/odroid/Documents/AutonomousFlight/apm_ws/build/gtest/src -lpthread -Wl,-rpath,/home/odroid/Documents/AutonomousFlight/apm_ws/build/gtest/src 

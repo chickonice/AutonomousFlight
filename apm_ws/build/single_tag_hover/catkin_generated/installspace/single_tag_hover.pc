@@ -1,0 +1,8 @@
+prefix=/home/odroid/Documents/AutonomousFlight/apm_ws/install
+
+Name: single_tag_hover
+Description: Description of single_tag_hover
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/odroid/Documents/AutonomousFlight/apm_ws/install/lib 
+Requires: 
