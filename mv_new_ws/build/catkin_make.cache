@@ -1,0 +1,2 @@
+bluefox2:camera_base
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/AutonomousFlight/mv_new_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/AutonomousFlight/mv_new_ws/install -G Unix Makefiles

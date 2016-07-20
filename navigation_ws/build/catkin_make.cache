@@ -1,0 +1,2 @@
+navigation
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/ROS/navigation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/ROS/navigation_ws/install -G Unix Makefiles

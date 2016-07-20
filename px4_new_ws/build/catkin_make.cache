@@ -1,0 +1,2 @@
+px4_nav
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/AutonomousFlight/px4_new_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/AutonomousFlight/px4_new_ws/install -G Unix Makefiles

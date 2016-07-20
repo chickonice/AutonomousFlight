@@ -1,0 +1,8 @@
+prefix=/home/odroid/Documents/AutonomousFlight/final_ws/install
+
+Name: px4_nav
+Description: Description of px4_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/odroid/Documents/AutonomousFlight/final_ws/install/lib 
+Requires: 

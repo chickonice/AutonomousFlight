@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/odroid/Documents/ROS/navigation_ws/install/setup.sh

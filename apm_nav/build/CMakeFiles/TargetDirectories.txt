@@ -1,0 +1,7 @@
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/CMakeFiles/clean_test_results.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/CMakeFiles/download_extra_data.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/CMakeFiles/doxygen.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/gtest/CMakeFiles/gtest.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/gtest/CMakeFiles/gtest_main.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/CMakeFiles/run_tests.dir
+/home/odroid/Documents/AutonomousFlight/apm_nav/build/CMakeFiles/tests.dir

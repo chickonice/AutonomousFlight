@@ -1,0 +1,8 @@
+prefix=/home/odroid/Documents/ROS/navigation_ws/install
+
+Name: navigation
+Description: Description of navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/odroid/Documents/ROS/navigation_ws/install/lib 
+Requires: 

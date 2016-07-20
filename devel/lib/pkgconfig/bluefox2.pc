@@ -1,0 +1,8 @@
+prefix=/home/odroid/Documents/AutonomousFlight/final_ws/devel
+
+Name: bluefox2
+Description: Description of bluefox2
+Version: 0.2.0
+Cflags: -I/home/odroid/Documents/AutonomousFlight/final_ws/devel/include -I/home/odroid/Documents/AutonomousFlight/final_ws/src/bluefox2/include -I/home/odroid/Documents/AutonomousFlight/final_ws/src/bluefox2/mvIMPACT/include
+Libs: -L/home/odroid/Documents/AutonomousFlight/final_ws/devel/lib -lbluefox2 -l:/home/odroid/Documents/AutonomousFlight/final_ws/src/bluefox2/mvIMPACT/lib/armv7l/libmvBlueFOX.so -l:/home/odroid/Documents/AutonomousFlight/final_ws/src/bluefox2/mvIMPACT/lib/armv7l/libmvDeviceManager.so -l:/home/odroid/Documents/AutonomousFlight/final_ws/src/bluefox2/mvIMPACT/lib/armv7l/libmvPropHandling.so
+Requires: message_runtime

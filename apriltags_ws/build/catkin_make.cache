@@ -1,0 +1,2 @@
+apriltags
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/AutonomousFlight/apriltags_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/AutonomousFlight/apriltags_ws/install -G Unix Makefiles

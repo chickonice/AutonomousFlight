@@ -1,0 +1,2 @@
+terarangertower-ros
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/AutonomousFlight/terarangertower_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/AutonomousFlight/terarangertower_ws/install -G Unix Makefiles

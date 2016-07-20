@@ -1,0 +1,2 @@
+apriltags:bluefox2:camera_base:px4_nav
+-DCATKIN_DEVEL_PREFIX=/home/odroid/Documents/AutonomousFlight/final_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/Documents/AutonomousFlight/final_ws/install -G Unix Makefiles
