@@ -31,7 +31,7 @@ void AprilMessageReceived(const apriltags::AprilTagDetections& detectionsMsg) {
         }
 	else
 	{
-		ROS_INFO("No AprilTags Detected");
+		ROS_ERROR("No AprilTags Detected");
 	}
 
 
