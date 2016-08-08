@@ -1,0 +1,8 @@
+prefix=/home/odroid/ROS/install
+
+Name: estimator
+Description: Description of estimator
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/odroid/ROS/install/lib 
+Requires: 

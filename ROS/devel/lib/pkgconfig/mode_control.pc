@@ -1,0 +1,8 @@
+prefix=/home/odroid/ROS/devel
+
+Name: mode_control
+Description: Description of mode_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/odroid/ROS/devel/lib 
+Requires: 

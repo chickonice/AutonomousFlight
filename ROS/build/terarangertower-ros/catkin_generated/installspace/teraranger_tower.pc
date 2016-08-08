@@ -1,0 +1,8 @@
+prefix=/home/odroid/ROS/install
+
+Name: teraranger_tower
+Description: Description of teraranger_tower
+Version: 0.1.1
+Cflags: -I/home/odroid/ROS/install/include
+Libs: -L/home/odroid/ROS/install/lib 
+Requires: roscpp sensor_msgs std_msgs dynamic_reconfigure

@@ -1,0 +1,8 @@
+prefix=/home/odroid/ROS/install
+
+Name: bluefox2
+Description: Description of bluefox2
+Version: 0.2.0
+Cflags: -I/home/odroid/ROS/install/include
+Libs: -L/home/odroid/ROS/install/lib -lbluefox2 -l:/home/odroid/ROS/src/bluefox2/mvIMPACT/lib/armv7l/libmvBlueFOX.so -l:/home/odroid/ROS/src/bluefox2/mvIMPACT/lib/armv7l/libmvDeviceManager.so -l:/home/odroid/ROS/src/bluefox2/mvIMPACT/lib/armv7l/libmvPropHandling.so
+Requires: message_runtime

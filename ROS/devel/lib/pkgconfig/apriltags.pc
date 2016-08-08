@@ -1,0 +1,8 @@
+prefix=/home/odroid/ROS/devel
+
+Name: apriltags
+Description: Description of apriltags
+Version: 0.0.2
+Cflags: -I/home/odroid/ROS/devel/include -I/home/odroid/ROS/src/apriltags/include
+Libs: -L/home/odroid/ROS/devel/lib 
+Requires: cv_bridge std_msgs sensor_msgs image_transport roscpp geometry_msgs

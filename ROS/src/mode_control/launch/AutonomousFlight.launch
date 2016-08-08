@@ -1,0 +1,10 @@
+<launch>
+	<node pkg="planner" name="planner" type="planner">
+	</node>
+
+	<node pkg="estimator" name="estimator" type="estimator">
+	</node>
+
+	<node pkg="mode_control" name="mode_control" type="mode_control">
+	</node>
+</launch>

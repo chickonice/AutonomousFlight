@@ -1,0 +1,2 @@
+camera_base:estimator:mode_control:planner
+-DCATKIN_DEVEL_PREFIX=/home/odroid/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/ROS/install -G Unix Makefiles
