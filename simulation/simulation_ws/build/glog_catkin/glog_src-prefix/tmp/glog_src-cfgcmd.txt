@@ -1,0 +1,1 @@
+cmd='cd;../glog_src/glog-0.3.4;&&;./configure;--with-pic;--with-gflags=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel;--prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel'

@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel
+
+Name: mav_msgs
+Description: Description of mav_msgs
+Version: 1.0.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/include -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/src/mav_comm/mav_msgs/include -I/usr/include/eigen3
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/lib 
+Requires: message_runtime std_msgs geometry_msgs

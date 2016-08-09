@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel
+
+Name: rotors_description
+Description: Description of rotors_description
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/lib 
+Requires: 

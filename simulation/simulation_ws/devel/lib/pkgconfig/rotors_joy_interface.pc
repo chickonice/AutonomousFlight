@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel
+
+Name: rotors_joy_interface
+Description: Description of rotors_joy_interface
+Version: 1.0.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/src/rotors_simulator/rotors_joy_interface/include
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/lib 
+Requires: roscpp geometry_msgs mav_msgs sensor_msgs

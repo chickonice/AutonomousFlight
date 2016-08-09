@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/install
+
+Name: planning_msgs
+Description: Description of planning_msgs
+Version: 1.0.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/lib 
+Requires: message_runtime geometry_msgs sensor_msgs octomap_msgs

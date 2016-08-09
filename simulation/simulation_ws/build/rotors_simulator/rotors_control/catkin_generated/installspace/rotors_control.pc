@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/install
+
+Name: rotors_control
+Description: Description of rotors_control
+Version: 1.0.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/lib -llee_position_controller -lroll_pitch_yawrate_thrust_controller
+Requires: geometry_msgs mav_msgs roscpp sensor_msgs glog_catkin

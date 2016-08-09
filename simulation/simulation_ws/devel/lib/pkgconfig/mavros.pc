@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel
+
+Name: mavros
+Description: Description of mavros
+Version: 0.12.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/include -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/src/mavros/mavros/include -I/usr/include
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel/lib -lmavros -l:/usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: diagnostic_msgs diagnostic_updater pluginlib roscpp sensor_msgs std_msgs tf tf2_ros geometry_msgs libmavconn message_runtime eigen_conversions

@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/install
+
+Name: rotors_gazebo
+Description: Description of rotors_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/lib 
+Requires: gazebo_msgs geometry_msgs mav_msgs roscpp sensor_msgs

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/spacecat/AutonomousFlight/simulation/simulation_ws/install/setup.sh

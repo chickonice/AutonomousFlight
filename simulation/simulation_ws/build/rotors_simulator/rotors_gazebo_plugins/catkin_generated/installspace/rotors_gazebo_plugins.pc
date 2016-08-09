@@ -1,0 +1,8 @@
+prefix=/home/spacecat/AutonomousFlight/simulation/simulation_ws/install
+
+Name: rotors_gazebo_plugins
+Description: Description of rotors_gazebo_plugins
+Version: 1.0.0
+Cflags: -I/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/spacecat/AutonomousFlight/simulation/simulation_ws/install/lib -lrotors_gazebo_motor_model -lrotors_gazebo_controller_interface
+Requires: roscpp tf rotors_model mav_msgs octomap_ros octomap_msgs planning_msgs geometry_msgs glog_catkin glog_catkin

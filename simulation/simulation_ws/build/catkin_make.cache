@@ -1,0 +1,2 @@
+arducopter_sitl_ros:catkin_simple:gflags_catkin:glog_catkin:mav_comm/mav_comm:mav_comm/mav_msgs:mav_comm/planning_msgs:rotors_simulator/rotors_control:rotors_simulator/rotors_description:rotors_simulator/rotors_gazebo:rotors_simulator/rotors_gazebo_plugins:rotors_simulator/rotors_joy_interface:rotors_simulator/rotors_model:rotors_simulator/rotors_simulator
+-DCATKIN_DEVEL_PREFIX=/home/spacecat/AutonomousFlight/simulation/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/spacecat/AutonomousFlight/simulation/simulation_ws/install -G Unix Makefiles
